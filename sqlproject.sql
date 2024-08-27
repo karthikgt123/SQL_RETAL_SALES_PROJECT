@@ -13,7 +13,7 @@ price_per_unit	float,
 cogs float,
 total_sale float
 )
-drop table project_analysis
+
 --data cleaning
 select * from dbo.retail_anaylsis
 where transactions_id is null 
@@ -69,14 +69,14 @@ how many unique customer are there
 
 select count(distinct customer_id)from dbo.retail_anaylsis
 
---at are unique category?
+--what are unique category?
 
 select distinct category from dbo.retail_anaylsis
 
 
 --data analysis and bussines key problems 
 
---1) write a query to have all records on the date '2023-11
+--1) write a query to have all records on the date '2023-11 and category is clothing and quantity is <=4
 
 
 SELECT * 
